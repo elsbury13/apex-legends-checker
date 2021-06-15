@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33%;
+  padding: 10px 50px 0 150px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+a {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.legend {
+  height: 300px; 
+  width: 300px;
+}
+
+.link {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+    padding: 10px 50px 0 50px;
+  }
+  header h2 {
+    font-size: 1em;
+  }
+}
