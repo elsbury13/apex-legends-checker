@@ -1,8 +1,9 @@
 # Apex Legends Checker
 
-## Available Scripts
+## Before Starting
 
-In the project directory, you can run:
+Open [https://apexlegendsapi.com/documentation.php](https://apexlegendsapi.com/documentation.php) and follow instructions to get a key
+Add Api Key to constants.js
 
 ### `yarn start`
 
